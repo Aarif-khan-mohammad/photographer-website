@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+20+Charted&family=Kalam:wght@300;400;700&family=Lugrasimo&family=Macondo&family=Micro+5&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&family=Sedan:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --lightblack: #3C5B6F;
+    --lightwhite: #F6F5F2;
+    --lightred: #DD5746;
+    --yellow: #FFC470;
+    --darknavyblue: #074173;
+    --kalam: "Kalam";
+    --cursivedancing: "Dancing Script";
+    --roboto: "Roboto";
+    --sedan: "Sedan";
+    --heading: 2.6rem;
+    --subheading: 1.5rem;
+    --para: 1rem;
+    --subheading1: 1.2rem;
+    --para: 0.8rem;
+    --subheading2: 1.8rem;
+    --para: 1.1rem;
+}
+
+.navbar {
+    font-weight: bold !important;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+/* hero section */
+
+#carousal-container {
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+
+.caro-btn {
+    margin-top: 13rem;
+    background-color: var(--lightblack);
+    height: 3rem;
+    width: 3rem;
+
+    @media(max-width: 576px) {
+        margin-top: 12rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        margin-top: 30rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    @media(min-width: 1200px) {
+        margin-top: 40rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+.hero-heading {
+    color: var(--black);
+    font-family: var(--kalam);
+    font-size: var(--para);
+    margin-right: 25rem;
+    margin-left: 5rem;
+    border: 2px solid var(--black);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 50%;
+    text-align: right;
+    animation: jumps 2s ease-in-out;
+    animation-iteration-count: infinite;
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        font-size: var(--subheading);
+        margin-bottom: 25rem;
+    }
+
+    @media(max-width: 576px) {
+        font-size: var(--para);
+        margin-bottom: 5rem;
+    }
+}
+
+/* end hero-section */
+
+
+
+/* photos-grid section */
+#photos-grid-section {
+    height: 100vh;
+    background-color: var(--lightwhite);
+    color: var(--black);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media(max-width: 576px) {
+        height: 88vh;
+    }
+
+    @media(min-width:576px) and (max-width: 768px) {
+        height: 102vh;
+    }
+
+    @media(min-width:768px) and (max-width:992px) {
+        height: 88vh;
+    }
+
+    @media(min-width:992px) and (max-width:1200px) {
+        height: 75vh;
+
+    }
+
+
+}
+
+.grid-img {
+    height: 12rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    @media(max-width: 576px) {
+        height: 6rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        height: 10rem;
+    }
+
+    @media(min-width:768px) and (max-width:992px) {
+        height: 12rem;
+
+    }
+
+    @media(min-width:992px) and (max-width:1200px) {
+        height: 12rem;
+    }
+
+}
+
+.grid-img1 {
+    margin-left: 2rem;
+    height: 20rem;
+
+    @media(max-width: 576px) {
+        height: 10rem;
+    }
+
+    @media(min-width:576px) and (max-width: 768px) {
+        height: 20rem;
+    }
+
+    @media(min-width:768px) and (max-width:992px) {
+        margin-left: 1;
+    }
+
+    @media(min-width:992px) and (max-width:1200px) {
+        height: 20rem;
+    }
+}
+
+/* end photos-grid-section */
+
+
+
+/* start testimonial-section */
+
+#testimonial-section {
+    background-color: var(--lightred);
+    height: 100vh;
+
+    @media(min-width: 768px) and (max-width:992px) {
+        height: 45vh;
+    }
+
+}
+
+
+
+.testimonial-head {
+    color: var(--white);
+    font-family: var(--sedan);
+    padding-top: 3rem;
+
+}
+
+.testimonial-para {
+    color: var(--white);
+    font-family: var(--cursivedancing);
+    width: 80%;
+    text-align: left;
+    margin-left: 4rem;
+    padding-top: 3rem;
+
+    @media(max-width: 576px) {
+        padding-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        margin-left: 0.5rem;
+        font-size: var(--para);
+    }
+
+    @media(min-width: 992px) and (max-width:1200px) {
+        font-size: var(--heading);
+    }
+
+    @media(min-width:1200px) {
+        font-size: var(--subheading2);
+        margin-top: 6rem;
+    }
+}
+
+.testimonial-carousal-container {
+    @media(max-width: 576px) {
+        margin-top: 3rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        margin-top: 7rem;
+    }
+
+    @media(min-width:1200px) {
+        margin-top: 12rem;
+    }
+}
+
+
+.counter-head {
+    color: var(--white);
+    font-family: var(--roboto);
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+
+    @media(max-width: 576px) {
+        padding-top: 1rem;
+    }
+
+    @media(min-width: 576px) and (max-width:768px) {
+        padding-top: 2.5rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        margin-left: 23rem;
+    }
+
+
+    @media(min-width:1200px) {
+        margin-left: 35rem;
+    }
+}
+
+.counter-slide {
+    font-size: var(--subheading);
+
+    @media (max-width: 576px) {
+        font-size: var(--para);
+    }
+}
+
+.car-buttons {
+    margin-top: 24rem;
+
+    @media(max-width: 576px) {
+        margin-top: 16.2rem;
+        width: 1rem;
+        height: 1rem;
+    }
+
+    @media(min-width: 576px) and (max-width:768px) {
+        margin-top: 24rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        margin-top: 17rem;
+    }
+
+    @media(min-width:1200px) {
+        margin-top: 26rem;
+    }
+}
+
+/* end testimonial-section */
+
+
+/* start my-vison-section */
+
+#my-vision-section {
+    background-image: url('https://i.ibb.co/chKQ1mV/smiling-man-taking-photo-hill.webp');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.vision-heading {
+    margin-top: 7rem;
+    font-family: var(--sedan);
+    width: 80%;
+
+    @media (max-width: 576px) {
+        margin-top: 6rem;
+        font-size: var(--subheading1) !important;
+    }
+}
+
+.vision-para {
+    margin-top: 3rem;
+    width: 64%;
+    font-family: var(--cursivedancing);
+    font-size: var(--subheading);
+    animation: jumps 2s ease-in-out;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+
+    @media (max-width: 576px) {
+        margin-top: 2rem;
+        width: 65%;
+        font-size: 1.1rem !important;
+    }
+
+    @media(min-width:576px) and (max-width:768px) {
+        font-size: var(--para);
+        font-weight: bold;
+    }
+}
+
+
+/* end my-vision-section */
+
+
+
+/* start contect-section */
+
+#contact-section {
+    font-family: var(--sedan);
+
+    padding-bottom: 2rem;
+}
+
+.contact-head {
+    padding-top: 1.5rem;
+}
+
+.contact-map-section {
+    height: 10rem;
+    width: 10rem;
+}
+
+.map-frame {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    @media(max-width: 567px) {
+        height: 10rem;
+        width: 20rem;
+    }
+
+    @media(min-width: 768px) and (max-width:992px) {
+        height: 15rem;
+        width: 20rem;
+    }
+
+    @media(min-width: 1200px) {
+        height: 15rem;
+    }
+
+}
+
+
+.input {
+    @media (min-width: 768px) and (max-width:992px) {
+        width: 20rem;
+    }
+}
+
+.submit-button {
+    @media (min-width: 768px) and (max-width:992px) {
+        width: 8rem;
+    }
+
+    @media(min-width:1200px) {
+        width: 8rem;
+    }
+}
+
+/* end contact-section */
+
+@keyframes jumps {
+    0% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+    }
+}
